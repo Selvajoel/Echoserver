@@ -20,8 +20,8 @@ Implementation using Python code
 Testing the server and client 
 
 ## PROGRAM:
-
-Name : selvajoel s
+```
+Name :Selvajoel s
 Reg no: 212222220040
 ```
 ### Server code
@@ -46,25 +46,23 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 ```
 ### Client Code:
 ```
-# echo-client.py
-
 import socket
-
-HOST = "127.0.0.1"  # The server's hostname or IP address
-PORT = 65432  # The port used by the server
-
+HOST = "127.0.0.1"
+PORT = 65432
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((HOST, PORT))
-    s.sendall(b"Hello, world")
+    s.connect((HOST, PORT)) 
+    s.sendall(b"Selve Joel,")
+    s.sendall(b"212222220040")
     data = s.recv(1024)
-
-print(f"Received {data!r}")
+print(f"\nRecived {data!r}")
 ```
 ## OUTPUT:
 ### SERVER SIDE
-![image](https://github.com/Yamunaasri/Echoserver/assets/115707860/10c06f8f-d24e-47a7-835f-43dcb8bf3238)
+![WhatsApp Image 2024-09-11 at 09 31 36_70ac12ce](https://github.com/user-attachments/assets/ce88ae50-5baf-4d6c-8431-ced3a3bdbda3)
+
 ### CLIENT SIDE 
-![image](https://github.com/Yamunaasri/Echoserver/assets/115707860/34a55432-7cee-4297-9972-99ae03e9b831)
+![WhatsApp Image 2024-09-11 at 09 31 37_63db1041](https://github.com/user-attachments/assets/826f0ec5-ef0f-40ac-bb89-03c675ce95d3)
+
 
 ## RESULT:
 The program is executed successfully
